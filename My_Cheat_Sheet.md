@@ -38,3 +38,15 @@ Filter document
 
 
 ```
+
+Delete collection
+
+```
+db.<collection>.drop()
+```
+
+Ingest multiple documents from a json file
+
+```
+mongoimport --db pre --collection  not_pii_pro --file test_ingest_db.json --jsonArray
+```
